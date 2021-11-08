@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qkdj5^xcvv3w!92lri#t+c0$%_aa3@hf!%+5-94n$b0$vf)wr4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'devwebappdjangoinstance01.azurewebsites.net']
 
 STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 # Application definition
