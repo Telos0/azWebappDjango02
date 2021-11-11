@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include, url
 import azAppDjango02.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', azAppDjango02.views.home, name='home'),
+    path('', include('todo_main.urls')),
+    path('index/', include('todo_main.urls')),
+    path('home/', include('todo_main.urls')),
+
+    # board app
+    #path('board/', include('todo_board.urls')),
 ]
